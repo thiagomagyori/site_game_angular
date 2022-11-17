@@ -1,0 +1,268 @@
+body
+{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.container
+{
+    max-width: 1920px;
+    width: 100%;
+    padding: 0;
+}
+
+/*header*/
+
+
+                      /*aqui falo que o header vai ser o elemento pai ai o position relative
+                      faz com que os itens dentro do elemento pai flutua apenas dentro do header
+                      top 0 fala que ele vai ficar encostado ao topo da tela 
+                      height fala que a altura dele vai ser auto ou sejá vai esticar de tamanho
+                      conforme vamos colocando os elementos lá dentro
+                      já o width fala que a largura dele vai ter 100% da tela*/
+header                
+{
+ position: relative; 
+ top: 0;
+ height: auto;
+ width: 100%;
+ 
+}
+
+/*nave bar*/
+
+
+/*position fixed fala que o nav vai ser fixado na tela
+top 0 fala que ele vai ficar colocado do topo
+height fala que ele vai ter uma altura de 100px
+width fala que ele vai ter uma largura de 100% da tela
+z-index fala que ela vai sobressair todos elementos na tela não importa se eu ir pro final da página eu sempre vou ver o menu */
+.fa-solid
+{
+    display: none;
+}
+
+nav
+{
+ position: fixed;
+ top: 0;
+ width: 100%;
+ z-index: 1;
+ background-color: #fff;
+ border-bottom: 1px solid #666;
+ 
+}
+
+nav::after
+{
+  clear:both;
+  content: "";
+  display: block;
+}
+
+.menu-container
+{
+    max-width: 1200px; /*fala que o container vai oculpar 1200px de qualquer tela que for vizualizar ele*/
+    position: relative; /*Utilizando o position Relative o elemento passa a aceitar as propriedades Top, Bottom, Left e Right. Com elas você pode alterar o posicionamento do elemento.*/
+    margin-right: auto; /*aqui a magica acontece centraliza o container ao centro */
+    margin-left: auto;  /*pegando como base A DIV NAV RIGHT LEFT DIREITA E ESQUERDA AUTOMATICO*/
+   
+
+}
+
+.menu-container ul
+{
+    float: right;
+    height: 100px; /*fala que a UL vai ter o tamanho de altura de 100% ela pega como base a altura da DIV nav*/
+    line-height: 100px; /*aqui ela centraliza o texto do menu ao centro da div line-height autura entre as linhas*/
+    margin: 0; /*zera a margin do topo*/
+    
+}
+
+.menu-container li
+{
+    list-style: none; /*formata a lista e tira aquela bolinha que vem por patrão nas listas */
+    float: left; /*posiciona os elemento da lista um ao lado do outro*/
+    margin: 0 15px; /*da um espaçamento horizontal entre os texto do menu*/
+}
+
+#logo-menu
+{
+    
+    width: 90px;
+    height: 90px;
+    
+}
+
+.menu-container li a
+{
+    text-decoration: none; /*formata o texto e tira o risco debaixo da letra*/
+    color: #666;
+    transition: .5s; /*efeito quando passar o mouse */
+}
+
+.menu-container li a:hover
+{
+ color:rgb(172, 63, 63); /*aqui setamos a cor que vai receber quando passar o mouse*/
+}
+/*FIM HEADER*/
+
+/*MAIN*/
+/*CARROSEL*/
+
+.carousel-inner
+{
+    
+    margin-top: 100px;
+}
+/*FIM CARROSEL*/
+
+#titulo-pg
+{
+    display: flex;
+    max-width: 1000px;
+    height: 40px;
+    margin: auto;
+    background-color: rgba(102, 102, 102, 0.39);
+    border-radius: 5px; /*arredonda as bordas da div*/
+    justify-content: space-between;
+}
+
+#titulo-pg p
+{
+ padding-left: 10px;
+ line-height: 40px;
+ font-weight: 800;
+ text-transform: uppercase;
+}
+
+#titulo-pg a
+{
+    padding-right: 10px;
+    line-height: 38px; /*alinha o texto na vertical*/
+    
+}
+
+
+.aria-carrosel
+{
+    padding-bottom: 50px;
+}
+
+
+/*GRID DE PRODUTOS*/
+.grid-produtos
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /*fala que o container vai oculpar 1200px de qualquer dela que for vizualizar ele*/
+    position: relative; /*Utilizando o position Relative o elemento passa a aceitar as propriedades Top, Bottom, Left e Right. Com elas você pode alterar o posicionamento do elemento.*/
+    margin-right: auto; /*aqui a magica acontece centraliza o container ao centro */
+    margin-left: auto;  /*pegando como base A DIV NAV RIGHT LEFT DIREITA E ESQUERDA AUTOMATICO*/
+    position: relative;
+    margin-bottom: 70px;
+    padding-top: 35px;
+}
+
+
+/*Resposive*/
+@media screen and (max-width: 1024px){
+.grid-produtos
+{
+width: 100%;
+display: inline-block; /*Display flex deixa os itens um ao lado do outro já o display inline-blok ele volta a ser elemento de bloco e fica um em baixo do outro*/
+
+
+}
+
+
+.card
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#card1, #card2, #card3, #card4
+{
+padding-bottom: 20px;
+}
+
+}
+
+
+/*SEGUNDA RESOLUÇÃO*/
+
+@media screen and (max-width: 974px) {
+
+.menu-container .bt-menu
+{
+    display: block !important; /*mostra o menu bar porém não é recomendado fazer desse jeito*/
+    cursor: pointer; /*muda o cursor do mouse ao passar em cima*/
+}
+#contact, #divs, #account, #logo-menu
+{
+    display: none;
+    
+}
+
+html, body
+{
+    overflow-x: hidden; /*faz com que se algum elemento estourar o layout não cria uma barra de rolagem horizontal*/
+}
+
+.bt-menu
+{
+    display: block;
+    font-size: 3em;
+    color: #666;
+    position: absolute;
+    left: 0.8em;
+    top: 0.5em;
+    
+}
+
+nav
+{
+    border-bottom: none;
+}
+
+.menu-container ul
+{
+    position: relative;    /*position: relative deixa a lista acetar top, bottom, left e right*/
+    top: 6.5em;                   /*joando a lista pra baixo*/
+    height: 3em;
+    line-height: 2.2em;
+    display: none;
+    float: none;
+    
+}
+
+.menu-container ul #home, #play, #xbox, #colec, #login 
+{
+    
+    background-color: rgba(169, 169, 169, 0.185); /*cor do fundo da letra*/
+    margin: 0;
+    float: none;
+    border-top: 1px solid darkslategray;
+    text-align: center;
+}
+
+.menu-container li a, #home, #play, #xbox, #colec, #login 
+{
+    color: #fff;
+}
+
+.menu-container ul #home, #play, #xbox, #colec a
+{
+font-size: 1em;
+}
+
+.abrir-menu  /*foi criado a CLASS no css para poder chamar ela no js*/
+{
+display: block !important;  /*fala que a lista do menu tem que aparecer */
+} 
+
+
+}
+
+

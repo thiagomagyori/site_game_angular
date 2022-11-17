@@ -1,0 +1,60 @@
+<body>
+<!--Conaier para agrupar toodos itens da tela login-->
+<main class="container">
+    <h2>Faça o seu login ou Crie uma conta</h2>
+<form method="post" action="validar.php"> <!--Metodo POST chamando a pagina validar.php-->
+
+<div class="campos"> <!--uma div para os campos-->
+      <input type="text" name="useremail" id="useremail" placeholder="Entre com seu e-mail">
+      <div class="risco">
+      </div>
+     </div>
+
+     <div class="campos"> <!--uma div para o campo senha-->
+        <input type="password" name="pw" id="pw" placeholder="Entre com sua senha">
+        <div class="risco">
+    </div>
+</div>
+   <input type="submit" value="Entrar" id="entrar" name="entrar">
+</form> 
+<!--Fim formulario-->
+
+<div class="final-card"> <!--footer dentro do container-->
+             <span>Entre com sua conta do Google ou Facebook</span>
+
+        <div class="bts">
+
+               <div class="icon"> <!--Div para imagem google-->
+                         <a href="#">
+                          <i class="fa-brands fa-google"></i>
+                          Google
+                        </a>
+                </div> <!--Final div google-->
+
+
+                <div class="icon"> <!--Div para imagem facebook-->
+                    <a href="#">
+                     <i class="fa-brands fa-facebook"></i>
+                     Facebook
+                   </a>
+           </div> <!--Final div face-->
+
+           <div class="icon"> <!--Div para imagem cadastrar-->
+            <a href="#">
+            <i class="fa-regular fa-address-card"></i>
+             Cadastre-se
+           </a>
+   </div> <!--Final div cadastrar-->
+
+        </div> <!--Final div botão-->
+
+       <!--Retornar-->
+        <div class="voltar"> 
+            <a routerLink="" target="_blank">
+                <i class="fa-solid fa-rotate-left"></i>
+             Retornar
+           </a>
+</div> <!--Final footer-->
+
+
+

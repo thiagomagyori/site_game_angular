@@ -1,0 +1,146 @@
+* /*reset*/
+{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fcfcfc;
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; /*alinha na vertical*/
+    justify-content: center; /*alinha na horizontal*/
+}
+
+.container
+{
+background-color: #fff;
+max-width: 400px;
+min-height: 70vh;
+padding: 2em;
+border-radius: 8px;
+box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.404);
+margin-left: auto;
+margin-right: auto;
+}
+
+.container h2
+{
+    text-align: center;
+}
+
+.campos
+{
+    position: relative;
+}
+
+/*estilizando o campo do input*/
+.campos input
+{
+    outline: none;
+    color: rgba(0, 0, 0, 0.548);
+}
+
+.campos input::placeholder
+{
+    color: rgba(0, 0, 0, 0.226);
+}
+
+form
+{
+    display: flex;
+    flex-direction: column; /*coloca um em baixo do outro tipo coluna vertical*/
+}
+
+form input[type="submit"]
+{
+margin-top: 2em;
+padding: 0.4em;
+background-color: #0B5ED7;
+border-radius: 4px;
+color: rgb(255, 255, 255);
+font-weight: 600; /*grossura da fonte / letra*/
+transition: all 0.4s ease;
+}
+
+form input[type="submit"]:hover
+{
+    -webkit-filter: blur(5px);
+    filter: blur(.4px);
+    background-color: #0A58CA;
+}
+
+form .campos:first-child
+{
+margin-bottom: 1.5em;
+}
+
+.final-card, span
+{
+margin-top: 1em;
+font-weight: 600;
+text-align: center;
+}
+
+.bts
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.bts .icon a
+{
+text-decoration: none;
+color: rgba(0, 0, 0, 0.555);
+}
+
+.bts .icon .fa-google
+{
+    color: #DD3E33;
+}
+
+.bts .icon .fa-facebook
+{
+    color: #0A58CA;
+}
+
+.bts .icon .fa-address-card
+{
+color: rgba(0, 0, 0, 0.74);
+}
+
+
+.campos .risco
+{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+    max-width: 22em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.voltar
+{
+    margin-top: 1em;
+}
+
+.voltar a
+{
+    text-decoration: none;
+}
+
+/*responsividade para 616px*/
+@media screen and (max-width: 616px){
+.container
+{
+ margin-right: 165px;
+}
+   
+}
