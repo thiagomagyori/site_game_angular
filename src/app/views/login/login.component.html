@@ -2,16 +2,16 @@
 <!--Conaier para agrupar toodos itens da tela login-->
 <main class="container">
     <h2>Faça o seu login ou Crie uma conta</h2>
-<form method="post" action="validar.php"> <!--Metodo POST chamando a pagina validar.php-->
+<form #LoginForm="ngForm"(ngSubmit)="receberDados()">
 
 <div class="campos"> <!--uma div para os campos-->
-      <input type="text" name="useremail" id="useremail" placeholder="Entre com seu e-mail">
+      <input type="text" name="useremail" id="useremail" placeholder="Entre com seu e-mail" [(ngModel)]="userModel.useremail" required>
       <div class="risco">
       </div>
      </div>
 
      <div class="campos"> <!--uma div para o campo senha-->
-        <input type="password" name="pw" id="pw" placeholder="Entre com sua senha">
+        <input type="password" name="pw" id="pw" placeholder="Entre com sua senha" [(ngModel)]="userModel.pw" required>
         <div class="risco">
     </div>
 </div>
