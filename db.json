@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "email": "lucas@gmail.com",
+      "password": "testeloja",
+      "id": 1
+    },
+    {
+      "email": "joseneves@gmail.com.br",
+      "password": "testeloja",
+      "id": 2
+    },
+    {
+      "email": "fnelson@gmail.com",
+      "password": "testeloja",
+      "id": 3
+    },
+    {
+      "email": "joinville@gmail.com",
+      "password": "testeloja",
+      "id": 4
+    },
+    {
+      "email": "mirian@gmail.com",
+      "password": "testeloja",
+      "id": 5
+    }
+  ]
+}
