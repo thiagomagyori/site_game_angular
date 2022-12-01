@@ -2,7 +2,7 @@
 <!--Conaier para agrupar toodos itens da tela login-->
 <main class="container">
     <h2>Faça o seu login ou Crie uma conta</h2>
-<form #LoginForm="ngForm"(ngSubmit)="receberDados()">
+<form (ngSubmit)="receberDados()">
 
 <div class="campos"> <!--uma div para os campos-->
       <input type="text" name="useremail" id="useremail" placeholder="Entre com seu e-mail" [(ngModel)]="userModel.useremail" required>

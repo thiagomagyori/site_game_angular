@@ -3,18 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
+import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './views/login/login.component';
 import {RoutingModule} from './routing/routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './views/header/header.component'; /*aqui importa o modulo criado routing*/
-import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './views/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
