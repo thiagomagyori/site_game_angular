@@ -29,7 +29,8 @@ userModel = new User();
   //função
   receberDados ()
   {
-
+      console.log(this.userModel)
+      alert(this.userModel.email)
   }
 
 }
