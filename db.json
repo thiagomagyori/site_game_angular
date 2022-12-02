@@ -1,34 +1,9 @@
 {
   "users": [
     {
-      "email": "lucas@gmail.com",
-      "password": "testeloja",
+      "email": "thiago@gmail.com",
+      "password": "123456",
       "id": 1
-    },
-    {
-      "email": "joseneves@gmail.com.br",
-      "password": "testeloja",
-      "id": 2
-    },
-    {
-      "email": "fnelson@gmail.com",
-      "password": "testeloja",
-      "id": 3
-    },
-    {
-      "email": "joinville@gmail.com",
-      "password": "testeloja",
-      "id": 4
-    },
-    {
-      "email": "mirian@gmail.com",
-      "password": "testeloja",
-      "id": 5
-    },
-    {
-      "email": "testando@gmail.com",
-      "password": "12345",
-      "id": 6
     }
   ]
 }

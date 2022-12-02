@@ -12,7 +12,7 @@ export class LoginService {
   constructor(private httpClient:HttpClient) { }
 
   //apontando o caminho do servidor json serve auth
-  url = " http://localhost:3000/users"
+  url = "http://localhost:3000/login"
 
 
 
@@ -25,8 +25,7 @@ export class LoginService {
         headers: new HttpHeaders({'Content-Type':'application/json'}),  //falamos o tipo
 
         observe: "response" //aqui pega a resposta após a acão pode ser um erro por ex
-    }
+    })
+ }
+}
 
-    )
-}
-}
