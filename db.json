@@ -24,6 +24,11 @@
       "email": "mirian@gmail.com",
       "password": "testeloja",
       "id": 5
+    },
+    {
+      "email": "testando@gmail.com",
+      "password": "12345",
+      "id": 6
     }
   ]
 }
